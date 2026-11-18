@@ -22,7 +22,30 @@ public class Bank {
         account2.withdraw(90);
         account2.showBalance();
 
-        scanner.close();
+        BankAccount account3 = new BankAccount("Tom", 9000);
+        String name = account3.getName();
+        System.out.println(name);
+
+        BankAccount account4 = new BankAccount("L", 10000);
+        String nameL = account4.getName();
+        System.out.println(nameL);
+
+        account1.setName("Nurbolat");
+        String nameChange = account1.getName();
+        System.out.println(nameChange);
+        account2.setName("");
+
+        account1.transfer(account2, 1000);
+        account1.showBalance();
+        account2.showBalance();
+
+        account2.transfer(account3, 500);
+        account2.showBalance();
+        account3.showBalance();
+
+        account1.transfer(account2, 99999); // не должно получиться
+        account1.showBalance();
+        account2.showBalance();
 
         }
 

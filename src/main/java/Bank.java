@@ -15,7 +15,7 @@ public class Bank {
         account1.withdraw(400);
         account1.showBalance();
 
-        BankAccount account2 = new BankAccount("Alex", 1500);
+        BankAccount account2 = new BankAccount("Alex.", 1500);
         account2.showBalance();
         account2.deposit(100);
         account2.showBalance();

@@ -47,6 +47,12 @@ public class Bank {
         account1.showBalance();
         account2.showBalance();
 
+        BankAccount account5 = new BankAccount("Me", 90000);
+        SavingsAccount account6 = new SavingsAccount("Akerke", 9000000, 8);
+
+        account5.showBalance();
+        account6.showBalance();
+
         }
 
 
